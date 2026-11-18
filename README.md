@@ -1,4 +1,4 @@
-# outbox
+# outbox4j
 
 A transactional outbox for any module: an event is written to a table in the module's own schema,
 in the module's own transaction, so a change and its event commit together or not at all. A relay

@@ -1,9 +1,10 @@
-package uz.khakimjanovich.outbox4j;
+package io.github.org4j.outbox;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.zaxxer.hikari.HikariDataSource;
+import io.github.org4j.persistence.ModulePersistence;
 import io.micrometer.tracing.Tracer;
 import io.micrometer.tracing.propagation.Propagator;
 import java.net.ServerSocket;
@@ -36,7 +37,6 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 import org.testcontainers.kafka.KafkaContainer;
 import org.testcontainers.postgresql.PostgreSQLContainer;
-import uz.khakimjanovich.persistence4j.ModulePersistence;
 
 @Testcontainers
 class OutboxIT {

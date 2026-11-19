@@ -1,14 +1,14 @@
-# outbox4j
+# outbox
 
 A transactional outbox for any module: an event is written to a table in the module's own schema,
 in the module's own transaction, so a change and its event commit together or not at all. A relay
 publishes the events to Kafka at least once, each key's events in the order written.
 
 ```groovy
-implementation libs.outbox4j
+implementation libs.outbox
 ```
 
-The module's changelog sets the table's place, then includes the platform's:
+The module's changelog sets the table's place, then includes org4j's:
 
 ```yaml
 databaseChangeLog:
@@ -36,6 +36,6 @@ outbox.append(new OutboxEvent(UUID.randomUUID(), "card-events", cardId, "card.bo
 
 ## Tests
 
-`./gradlew -p platform :outbox:integrationTest`, on a real Postgres and Kafka: an event commits with
+`./gradlew integrationTest`, on a real Postgres and Kafka: an event commits with
 its transaction or not at all, one key's events arrive in order and once, an event Kafka never took
 stays unpublished, and a relay waits while another replica's relay holds the outbox.

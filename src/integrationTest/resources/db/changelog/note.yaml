@@ -1,4 +1,4 @@
-# A module's changelog: its own table, then the platform's outbox in its schema.
+# A module's changelog: its own table, then org4j's outbox in its schema.
 databaseChangeLog:
   - property: { name: outbox.schema, value: note }
   - property: { name: outbox.table, value: note_outbox }

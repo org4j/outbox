@@ -1,4 +1,4 @@
-package uz.khakimjanovich.platform.outbox;
+package uz.khakimjanovich.outbox4j;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;

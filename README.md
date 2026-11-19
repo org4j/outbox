@@ -5,7 +5,7 @@ in the module's own transaction, so a change and its event commit together or no
 publishes the events to Kafka at least once, each key's events in the order written.
 
 ```groovy
-implementation libs.platform.outbox
+implementation libs.outbox4j
 ```
 
 The module's changelog sets the table's place, then includes the platform's:

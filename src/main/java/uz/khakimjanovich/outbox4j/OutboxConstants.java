@@ -1,4 +1,4 @@
-package uz.khakimjanovich.platform.outbox;
+package uz.khakimjanovich.outbox4j;
 
 import java.util.regex.Pattern;
 import lombok.experimental.UtilityClass;

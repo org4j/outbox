@@ -1,4 +1,4 @@
-package uz.khakimjanovich.platform.outbox;
+package uz.khakimjanovich.outbox4j;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -36,7 +36,7 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 import org.testcontainers.kafka.KafkaContainer;
 import org.testcontainers.postgresql.PostgreSQLContainer;
-import uz.khakimjanovich.platform.persistence.ModulePersistence;
+import uz.khakimjanovich.persistence4j.ModulePersistence;
 
 @Testcontainers
 class OutboxIT {

@@ -1,4 +1,4 @@
 @NullMarked
-package uz.khakimjanovich.platform.outbox;
+package uz.khakimjanovich.outbox4j;
 
 import org.jspecify.annotations.NullMarked;

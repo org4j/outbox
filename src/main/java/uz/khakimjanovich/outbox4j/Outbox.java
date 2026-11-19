@@ -1,4 +1,4 @@
-package uz.khakimjanovich.platform.outbox;
+package uz.khakimjanovich.outbox4j;
 
 import io.micrometer.tracing.Span;
 import io.micrometer.tracing.Tracer;

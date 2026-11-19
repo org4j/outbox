@@ -1,8 +1,8 @@
 // A transactional outbox for any module: events written in the module's own transaction, to a table in
 // its own schema, and a relay that publishes them to Kafka at least once, in the order written.
 plugins {
-    alias(libs.plugins.platform.library)
-    alias(libs.plugins.platform.integration.test)
+    alias(libs.plugins.conventions.library)
+    alias(libs.plugins.conventions.integration.test)
 }
 
 dependencies {
